@@ -32,7 +32,7 @@ public class SelectServlet extends HttpServlet {
 	}
 	*/
     
-    //doget()인지 dopost()인지 모를떄? service()
+    //form 으로 안써서 !! doget()인지 dopost()인지 모를떄? service()
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		EmpDAO dao = new EmpDAO();
