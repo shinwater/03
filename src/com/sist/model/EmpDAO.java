@@ -102,6 +102,34 @@ public class EmpDAO {
 		
 	}//dept() 메서드 end
 	
+	//EMP테이블에 레코드를 추가하는 메서드
+	public int insert(EmpDTO dto) {//객체들이 인자로...넘어간다아.. (주소값이 넘어왕)*****
+		int result = 0;
+		
+		try {
+			String sql= "insert into emp values(?,?,?,?,sysdate,?,?,?)";
+			pstmt = con.prepareStatement(sql);
+			pstmt.setInt(1, dto.getEmpno());
+			pstmt.setString(2, dto.getEname());
+			pstmt.setString(3, dto.getJob());
+			pstmt.setInt(4, dto.getMgr());
+			pstmt.setInt(5, dto.getSal());
+			pstmt.setInt(6, dto.getComm());
+			pstmt.setInt(7, dto.getDeptno());
+			
+			result = pstmt.executeUpdate();
+			
+			//open 객체 닫기
+			pstmt.close(); con.close();
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		return result;
+	}// insert()메서드 end
+	
 	
 
 }

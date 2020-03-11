@@ -65,6 +65,13 @@
 					</td>
 				</tr>
 				
+				<tr>
+					<td colspan="2" align="center">
+						<input type="submit" value="추가">&nbsp;&nbsp;
+						<input type="reset" value="취소">
+					</td>
+				</tr>
+				
 			</table>
 		</form>
 	</div>
