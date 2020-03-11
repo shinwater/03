@@ -70,6 +70,38 @@ public class EmpDAO {
 		}
 		
 		return list;
-	}
+	}//select() 메서드 end
+	
+	
+	//DEPT 테이블의 전체 목록을 조회하는 메서드 
+	public ArrayList<DeptDTO> dept() {
+		ArrayList<DeptDTO> list = new ArrayList<DeptDTO>();
+		
+		try {
+
+			String sql="select * from dept order by deptno";
+			pstmt = con.prepareStatement(sql);
+			rs = pstmt.executeQuery();
+			
+			while(rs.next()) {
+				DeptDTO dto = new DeptDTO();
+				dto.setDeptno(rs.getInt("deptno"));
+				dto.setDname(rs.getString("dname"));
+				dto.setLoc(rs.getString("loc"));
+				
+				list.add(dto);
+			}
+			rs.close(); pstmt.close(); con.close();
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		return list;
+		
+	}//dept() 메서드 end
+	
+	
 
 }

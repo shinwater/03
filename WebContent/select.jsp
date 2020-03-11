@@ -54,6 +54,13 @@
 					</tr>
 				<% }%>
 		</table>
+		
+		<br/><br/>
+		<hr width="50%" color="blue">
+		<br/>
+		<a href="insert">[레코드추가]</a>
+		
+		
 	</div>
 </body>
 </html>
