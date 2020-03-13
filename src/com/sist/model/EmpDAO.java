@@ -15,7 +15,7 @@ public class EmpDAO {
 	PreparedStatement pstmt = null;// DB에 sql문을 전송하는 객체
 	ResultSet rs = null; //sql문을 실행 후 그 결과값을 가진 객체
 	
-	public EmpDAO() { //기본 생성자 
+	public EmpDAO() { //기본 생성자 :드라이버로딩, 디비와 연결진행~~~
 		
 		//오라클드라이버를 가져와서 사용할수있께해야해...... ... ㅜㅜ
 		String driver = "oracle.jdbc.driver.OracleDriver";
@@ -75,6 +75,7 @@ public class EmpDAO {
 	
 	//DEPT 테이블의 전체 목록을 조회하는 메서드 
 	public ArrayList<DeptDTO> dept() {
+		
 		ArrayList<DeptDTO> list = new ArrayList<DeptDTO>();
 		
 		try {

@@ -24,13 +24,7 @@ public class SelectServlet extends HttpServlet {
         // TODO Auto-generated constructor stub
     }
     
-    /*
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-	}
 
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-	}
-	*/
     
     //form 으로 안써서 !! doget()인지 dopost()인지 모를떄? service()
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

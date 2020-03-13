@@ -31,7 +31,7 @@
 				if(emp.size() != 0) { //emp에 데이터가 있다면...
 					//emp 원소 수만큼 반복해서 출력
 					for(int i=0; i<emp.size(); i++){
-						EmpDTO dto = emp.get(i);
+						EmpDTO dto = emp.get(i); //객체 생성해서 그주소값에 우변의 주소값을넣ㄴㄴ다~
 						%>
 						<tr>
 							<td><%= dto.getEmpno() %></td>

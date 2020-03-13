@@ -14,7 +14,7 @@
 		<br/><br/><br/><br/><br/><br/>
 		
 		<%-- request.getContextPath() : 현재 프로젝트명을 반환하는 메서드 
-		<%=request.getContextPath() %>/--%>
+		<%-- <a href = "<%=request.getContextPath()%>/select">이렇게 써도되고 아래처럼 써도되고!!--%>
 		<a href="select">[레코드 검색]</a>
 	</div>
 </body>

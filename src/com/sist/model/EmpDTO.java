@@ -14,7 +14,7 @@ public class EmpDTO {
 	private int comm;
 	private int deptno;
 	
-	
+	 
 	
 	public int getEmpno() {
 		return empno;

@@ -49,6 +49,7 @@ public class InsertOkServlert extends HttpServlet {
     	EmpDAO dao = new EmpDAO();
     	int res = dao.insert(dto);
     	
+    	resp.setContentType("text/html; charset=UTF-8"); 
     	PrintWriter out = resp.getWriter();
     	
     	if(res>0) {//레코드 추가 성공

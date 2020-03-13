@@ -25,6 +25,8 @@ public class InsertServlet extends HttpServlet {
 
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    	//그냥  insertForm으로 넘어가도되는데 부서번호 에러날까봐~~ 만들어준 페이지....? 
+    	
     	EmpDAO dao = new EmpDAO();
     	ArrayList<DeptDTO> dept = dao.dept();
     	
